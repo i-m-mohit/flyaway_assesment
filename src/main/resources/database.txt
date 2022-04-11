@@ -1,0 +1,36 @@
+create database flyaway
+
+
+CREATE TABLE `admin` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  UNIQUE KEY `email_UNIQUE` (`email`)
+)
+
+
+CREATE TABLE `flight` (
+  `flight_id` int NOT NULL AUTO_INCREMENT,
+  `flight_name` varchar(45) DEFAULT NULL,
+  `source` varchar(45) DEFAULT NULL,
+  `destination` varchar(45) DEFAULT NULL,
+  `fare` int DEFAULT NULL,
+  `date` varchar(45) DEFAULT NULL,
+  UNIQUE KEY `flight_id` (`flight_id`),
+  UNIQUE KEY `flight_id_UNIQUE` (`flight_id`),
+  UNIQUE KEY `flgiht_name_UNIQUE` (`flight_name`)
+)
+
+CREATE TABLE `flight_book` (
+  `booking_id` int unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `phone` varchar(45) DEFAULT NULL,
+  `passenger_size` varchar(45) DEFAULT NULL,
+  `flight_id` int DEFAULT NULL,
+  `fare` int DEFAULT NULL,
+  PRIMARY KEY (`booking_id`)
+)
+
+

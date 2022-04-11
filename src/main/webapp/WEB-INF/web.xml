@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    <display-name>MOHIT_FlyAway</display-name>
+    <servlet>
+        <servlet-name>homePage</servlet-name>
+        <servlet-class>com.flyaway.HomePage</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>adminLogin</servlet-name>
+        <servlet-class>com.flyaway.admin.AdminServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>adminDashBoard</servlet-name>
+        <servlet-class>com.flyaway.admin.AdminDashboardServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>adminLoginPost</servlet-name>
+        <servlet-class>com.flyaway.admin.AdminServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>addFlight</servlet-name>
+        <servlet-class>com.flyaway.admin.FlightServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addFlight</servlet-name>
+        <url-pattern>/addFlight</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>addFlightDetail</servlet-name>
+        <servlet-class>com.flyaway.admin.FlightServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addFlightDetail</servlet-name>
+        <url-pattern>/addFlightDetail</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>viewFlight</servlet-name>
+        <servlet-class>com.flyaway.admin.FlightServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewFlight</servlet-name>
+        <url-pattern>/viewFlight</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <servlet>
+        <servlet-name>searchFlight</servlet-name>
+        <servlet-class>com.flyaway.customer.CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>searchFlight</servlet-name>
+        <url-pattern>/searchFlight</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>searchFlightCustomer</servlet-name>
+        <servlet-class>com.flyaway.customer.CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>searchFlightCustomer</servlet-name>
+        <url-pattern>/searchFlightCustomer</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>bookFlightView</servlet-name>
+        <servlet-class>com.flyaway.customer.CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bookFlightView</servlet-name>
+        <url-pattern>/bookFlightView</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>bookFlight</servlet-name>
+        <servlet-class>com.flyaway.customer.CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bookFlight</servlet-name>
+        <url-pattern>/bookFlight</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>finalBooking</servlet-name>
+        <servlet-class>com.flyaway.customer.CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>finalBooking</servlet-name>
+        <url-pattern>/final_booking</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>payment</servlet-name>
+        <servlet-class>com.flyaway.customer.CustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>payment</servlet-name>
+        <url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>homePage</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>adminLogin</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+
+        <servlet-name>adminDashBoard</servlet-name>
+        <url-pattern>/adminDashBoard</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+
+        <servlet-name>adminLoginPost</servlet-name>
+        <url-pattern>/adminLoginPost</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>changePassword</servlet-name>
+        <servlet-class>com.flyaway.admin.AdminDashboardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>changePassword</servlet-name>
+        <url-pattern>/changePassword</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>changePasswordFinal</servlet-name>
+        <servlet-class>com.flyaway.admin.AdminDashboardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>changePasswordFinal</servlet-name>
+        <url-pattern>/changePasswordFinal</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
